@@ -4,7 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>My First Site</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -12,32 +31,87 @@
         <h1>Wetools Project 2025</h1>
     </header>
 
-    <nav>
+    <nav id="site">
         <a href="index.html">Home</a>
-        <a href="#">Products</a>
+        <a href="contact-us.html">Contact Us</a>
         <a href="#">About Us</a>
     </nav>
 
-    <main>
+    <hr>
+
+    <main class="contact">
+        <nav id="contents">
+            <ul>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#family-balance">Family and Balance</a></li>
+                <li><a href="#learning-growing">Learning and Growing</a></li>
+            </ul>
+        </nav>
         <h2>Welcome! I'm Prof Herd, and I'm glad you stopped by.</h2>
+
         <section>
-            <h3>Background</h3>
+            <h3 id="background">Background</h3>
             <p>At 29, I'm a <strong>proud husband and father</strong> of <em>four amazing kids</em>, and my life is filled with adventure, love, and a lot of laughter. When I'm not spending quality time with my family, you'll probably find me indulging in my passions, like going on long walks, cooking up new recipes, or restoring classic cars. There's something incredibly satisfying about bringing old cars back to life, and it's a hobby that keeps me grounded and connected to a sense of craftsmanship.</p>
             <img src="images/stephenherd.jpg" alt="Profile picture">
         </section>
         <section>
-            <h3>Family and balance are important to me.</h3>
+            <h3 id="family-balance">Family and Balance</h3>
             <p>As a dedicated parent and partner, I understand the value of hard work, but also the importance of taking time for the things that make life meaningful. I believe in creating lasting memories with my loved ones, whether that's through simple moments like cooking dinner together or exploring new places. I'm always striving to find that perfect balance between family, hobbies, and personal growth, and that's something I'm passionate about sharing with others.</p>
             <img src="https://mywebtraining.net/articles/images/cat1.jpg" alt="Cat with sun glasses">
         </section>
         <section>
-            <h3>Learning and Growing</h3>
+            <h3 id="learning-growing">Learning and Growing</h3>
             <p>Whether I'm tinkering with cars or perfecting a new recipe, I'm constantly evolving. I love diving into new challenges and improving my skills, and I'm always looking for ways to expand my horizons. This mindset keeps me curious and driven, and I'm excited about what lies ahead as I continue to explore my passions and embrace the journey of life.</p>
+            <figure>
+                <a href="images/furious-cat1-lg.png" target="_blank">
+                    <img src="images/furious-cat1-sm.png" alt="Happy cat!" class="blog-image">
+                </a>
+                <figcaption>Happy Cat</figcaption>
+            </figure>
         </section>
+        <!-- Accessibly table for my pretend class schedule -->
+        <table>
+            <caption>Spring 2025 Class Schedule</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Course</th>
+                    <th scope="col">Days</th>
+                    <th scope="col">Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Intro to Web Design</th>
+                    <td headers="days">Monday/Wednesday</td>
+                    <td headers="time">10:00am - 11:30am</td>
+                </tr>
+                <tr>
+                    <th scope="row">Intro to Web Development</th>
+                    <td headers="days">Tuesday/Thursday</td>
+                    <td headers="time">1:00pm - 2:30pm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Advanced Web Development</th>
+                    <td headers="days">Monday/Wednesday</td>
+                    <td headers="time">6:00pm - 7:30pm</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
+    <hr>
+
     <footer>
-        <h2>Copyright 2025</h2>
+        <h2 class="foot-head">Copyright &copy;2025</h2>
+        <ul>
+            <li><a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a></li>
+            <li><a href="mailto:sherd@dallascollege.edu">Email the Webmaster</a></li>
+        </ul>
+        <address>
+            Brookhaven College<br>
+            3939 Valley View Lane<br>
+            Farmers Branch, TX 75244
+        </address>
     </footer>
 </body>
 

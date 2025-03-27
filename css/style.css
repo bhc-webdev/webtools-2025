@@ -1,0 +1,135 @@
+html,
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    border: black solid thin;
+    padding: 30px;
+    /* margin: 30px; */
+    background-color: darkblue;
+}
+
+h1 {
+    color: yellow;
+    margin: 0;
+    padding: 20px 10px;
+}
+
+h2,
+h3 {
+    color: darkgreen;
+    margin: 0;
+    padding: 20px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: darkslategray;
+    padding: 10px 0 20px;
+    text-align: center;
+
+    address {
+        color: cornsilk;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    a:visited {
+        color: cornsilk;
+    }
+
+    a:link {
+        color: yellow;
+    }
+
+    /* visited link */
+    a:hover {
+        color: cornsilk;
+        text-decoration: none;
+    }
+
+    /* mouse over link */
+    a:active {
+        color: red;
+    }
+
+    /* selected link */
+
+}
+
+.foot-head {
+    color: cornsilk;
+}
+
+a:link {
+    color: blue;
+}
+
+/* unvisited link */
+a:visited {
+    color: darkslategray;
+}
+
+/* visited link */
+a:hover {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:active {
+    color: yellow;
+}
+
+/* blog images */
+.blog-image {
+    width: 20%;
+    min-width: 200px;
+}
+
+.contact {
+    width: 70%;
+    margin: 0 auto 20px;
+}
+
+fieldset {
+    margin: 0 0 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table caption {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+    border-bottom: thin solid black;
+}
+
+thead tr {
+    background-color: darkblue;
+    color: yellow;
+}
+
+tbody tr:nth-child(even) {
+    background-color: cornsilk;
+}
+
+tbody tr:hover {
+    background-color: darkslategray;
+    color: cornsilk;
+}
