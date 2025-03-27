@@ -29,36 +29,33 @@ footer {
     background-color: darkslategray;
     padding: 10px 0 20px;
     text-align: center;
+}
 
-    address {
-        color: cornsilk;
-    }
+footer address {
+    color: cornsilk;
+}
 
-    li {
-        list-style-type: none;
-    }
+footer li {
+    list-style-type: none;
+}
 
-    a:visited {
-        color: cornsilk;
-    }
+footer a:visited {
+    color: cornsilk;
+}
 
-    a:link {
-        color: yellow;
-    }
+footer a:link {
+    color: yellow;
+}
 
-    /* visited link */
-    a:hover {
-        color: cornsilk;
-        text-decoration: none;
-    }
+/* visited link */
+footer a:hover {
+    color: cornsilk;
+    text-decoration: none;
+}
 
-    /* mouse over link */
-    a:active {
-        color: red;
-    }
-
-    /* selected link */
-
+/* mouse over link */
+footera:active {
+    color: red;
 }
 
 .foot-head {
