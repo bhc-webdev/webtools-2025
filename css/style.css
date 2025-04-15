@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
 }
 
 header {
@@ -11,51 +12,73 @@ header {
     background-color: darkblue;
 }
 
+main {
+    margin: 0 auto;
+    padding: 0 10%;
+    max-width: 1600px;
+}
+
 h1 {
     color: yellow;
     margin: 0;
-    padding: 20px 10px;
+    font-size: clamp(32px, 3vw, 3.5vw);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.75vw;
+}
+
+h3 {
+    font-size: 1.25vw;
 }
 
 h2,
 h3 {
     color: darkgreen;
-    margin: 0;
-    padding: 20px 10px;
+    margin: .5em 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    margin: .75em 0;
+    padding: 0;
 }
 
 footer {
     background-color: darkslategray;
     padding: 10px 0 20px;
     text-align: center;
-}
 
-footer address {
-    color: cornsilk;
-}
+    address {
+        color: cornsilk;
+    }
 
-footer li {
-    list-style-type: none;
-}
+    li {
+        list-style-type: none;
+    }
 
-footer a:visited {
-    color: cornsilk;
-}
+    a:visited {
+        color: cornsilk;
+    }
 
-footer a:link {
-    color: yellow;
-}
+    a:link {
+        color: yellow;
+    }
 
-/* visited link */
-footer a:hover {
-    color: cornsilk;
-    text-decoration: none;
-}
+    /* visited link */
+    a:hover {
+        color: cornsilk;
+        text-decoration: none;
+    }
 
-/* mouse over link */
-footera:active {
-    color: red;
+    /* mouse over link */
+    a:active {
+        color: red;
+    }
+
+    /* selected link */
+
 }
 
 .foot-head {

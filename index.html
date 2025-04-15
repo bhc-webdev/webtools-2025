@@ -22,52 +22,71 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <title>My First Site</title>
-
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/nav-menu.css">
 </head>
 
-<body>
-    <header>
-        <h1>Wetools Project 2025</h1>
+<body class="grid-container">
+
+    <header class="header">
+        <h1 class="banner-heading">Wetools Project 2025</h1>
+        <img src="images/logo-sm.png" alt="Site logo" class="logo">
     </header>
 
-    <nav id="site">
-        <a href="index.html">Home</a>
-        <a href="contact-us.html">Contact Us</a>
-        <a href="#">About Us</a>
+    <nav id="site" class="sidenav">
+        <h2>Site Menu</h2>
+        <div class="sidenav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="team.html">About Us</a>
+        </div>
     </nav>
 
-    <hr>
+    <aside id="contents" class="aside">
+        <h2>Contents</h2>
+        <ul>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#family-balance">Family and Balance</a></li>
+            <li><a href="#learning-growing">Learning and Growing</a></li>
+        </ul>
+    </aside>
 
-    <main class="contact">
-        <nav id="contents">
-            <ul>
-                <li><a href="#background">Background</a></li>
-                <li><a href="#family-balance">Family and Balance</a></li>
-                <li><a href="#learning-growing">Learning and Growing</a></li>
-            </ul>
-        </nav>
+    <main class="">
         <h2>Welcome! I'm Prof Herd, and I'm glad you stopped by.</h2>
-
-        <section>
-            <h3 id="background">Background</h3>
-            <p>At 29, I'm a <strong>proud husband and father</strong> of <em>four amazing kids</em>, and my life is filled with adventure, love, and a lot of laughter. When I'm not spending quality time with my family, you'll probably find me indulging in my passions, like going on long walks, cooking up new recipes, or restoring classic cars. There's something incredibly satisfying about bringing old cars back to life, and it's a hobby that keeps me grounded and connected to a sense of craftsmanship.</p>
-            <img src="images/stephenherd.jpg" alt="Profile picture">
+        <hr>
+        <section class="highlight clearfix">
+            <figure class="float-right article-image">
+                <img src="images/stephenherd.jpg" alt="Profile picture">
+                <figcaption>Stephen Herd</figcaption>
+            </figure>
+            <div class="highlight-text">
+                <h3 id="background">Background</h3>
+                <p>At 29, I'm a <strong>proud husband and father</strong> of <em>four amazing kids</em>, and my life is filled with adventure, love, and a lot of laughter. When I'm not spending quality time with my family, you'll probably find me indulging in my passions, like going on long walks, cooking up new recipes, or restoring classic cars. There's something incredibly satisfying about bringing old cars back to life, and it's a hobby that keeps me grounded and connected to a sense of craftsmanship.</p>
+            </div>
         </section>
-        <section>
-            <h3 id="family-balance">Family and Balance</h3>
-            <p>As a dedicated parent and partner, I understand the value of hard work, but also the importance of taking time for the things that make life meaningful. I believe in creating lasting memories with my loved ones, whether that's through simple moments like cooking dinner together or exploring new places. I'm always striving to find that perfect balance between family, hobbies, and personal growth, and that's something I'm passionate about sharing with others.</p>
-            <img src="https://mywebtraining.net/articles/images/cat1.jpg" alt="Cat with sun glasses">
+        <section class="highlight clearfix">
+            <figure class="float-right article-image">
+                <img src="https://mywebtraining.net/articles/images/cat1.jpg" alt="Cat with sun glasses">
+                <figcaption>Cool Cat</figcaption>
+            </figure>
+            <div class="highlight-text">
+                <h3 id="family-balance">Family and Balance</h3>
+                <p>As a dedicated parent and partner, I understand the value of hard work, but also the importance of taking time for the things that make life meaningful. I believe in creating lasting memories with my loved ones, whether that's through simple moments like cooking dinner together or exploring new places. I'm always striving to find that perfect balance between family, hobbies, and personal growth, and that's something I'm passionate about sharing with others.</p>
+            </div>
         </section>
-        <section>
-            <h3 id="learning-growing">Learning and Growing</h3>
-            <p>Whether I'm tinkering with cars or perfecting a new recipe, I'm constantly evolving. I love diving into new challenges and improving my skills, and I'm always looking for ways to expand my horizons. This mindset keeps me curious and driven, and I'm excited about what lies ahead as I continue to explore my passions and embrace the journey of life.</p>
-            <figure>
+        <section class="highlight clearfix">
+            <figure class="float-right article-image">
                 <a href="images/furious-cat1-lg.png" target="_blank">
                     <img src="images/furious-cat1-sm.png" alt="Happy cat!" class="blog-image">
                 </a>
                 <figcaption>Happy Cat</figcaption>
             </figure>
+            <div class="highlight-text">
+                <h3 id="learning-growing">Learning and Growing</h3>
+                <p>Whether I'm tinkering with cars or perfecting a new recipe, I'm constantly evolving. I love diving into new challenges and improving my skills, and I'm always looking for ways to expand my horizons. This mindset keeps me curious and driven, and I'm excited about what lies ahead as I continue to explore my passions and embrace the journey of life.</p>
+            </div>
         </section>
         <!-- Accessibly table for my pretend class schedule -->
         <table>
@@ -99,9 +118,7 @@
         </table>
     </main>
 
-    <hr>
-
-    <footer>
+    <footer class="footer">
         <h2 class="foot-head">Copyright &copy;2025</h2>
         <ul>
             <li><a href="https://www.dallascollege.edu/pages/default.aspx">Visit Dallas College</a></li>

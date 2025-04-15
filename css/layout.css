@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+.banner-heading {
+    margin-left: clamp(100px, 20%, 250px);
+    padding: 20px 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.highlight {
+    position: relative;
+    background-color: #f0f0f0;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    margin: 0 0 1em;
+    padding: 1em;
+}
+
+.highlight-text {
+    width: 67%;
+    padding: 0 10%;
+}
+
+.article-image {
+    width: 30%;
+    min-width: 200px;
+    margin-top: 2em;
+}
+
+.logo {
+    position: absolute;
+    top: 2vh;
+    right: 4vw;
+    width: clamp(100px, 10%, 150px);
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.contact-aside {
+    position: sticky;
+    top: 0;
+    float: left;
+    margin: 0 0 0 2em;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+    min-width: 200px;
+    margin: 1em 0;
+    padding: 1em 2em;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.team-member h3 {
+    margin: 0.5em 0;
+    font-size: x-large;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(32, 107, 2, 0.6);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+}
+
+/* Style the links inside the navigation bar */
+.main-nav a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Change the color of links on hover */
+.main-nav a:hover {
+    background-color: #fff;
+    color: darkgreen;
+}
+
+/* Add a color to the active/current link */
+.main-nav a.active {
+    background-color: #fff;
+    color: darkgreen;
+}
+
+.sign-in {
+    /* Align this link to the right */
+    margin-left: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 12em;
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, auto, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, auto, minmax(200px, 1fr));
+    grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    gap: 20px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidenav {
+    grid-area: nav;
+    padding: 15px;
+}
+
+.sidenav-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.aside {
+    grid-area: aside;
+    padding: 25px;
+    margin-right: 3em;
+}
